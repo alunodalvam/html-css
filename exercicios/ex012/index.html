@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedado localmente</h1>
+    <p>Este vídeos está hospedado no meu próprio servidor.</p>
+
+    <video src="media/meu-video.mp4"  width="640" controls></video>
+
+    <video width="640" poster="imagens/tumb.jpg" controls>
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.mkv" type="video/mp4">
+        <source src="media/meu-video.webm" type="video/webm">
+        <source src="media/meu-video.ogv" type="video/ogg">
+
+        <p>Infelizmente seu navegador não suporta o formato dos videos!</p>
+
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/zPFuIWsL8jk?si=U4hfD2DrXkwe3QqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/893387517?h=736f09a711&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
